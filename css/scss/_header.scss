@@ -1,0 +1,98 @@
+.header {
+  &.open {
+    .header__hamburger {
+      border-color: $white;
+      &::before {
+        width: 15px;
+        border-left: solid 2.5px $white;
+        border-right: solid 2.5px $white;
+        transform: translateX(-5px) rotate(45deg);
+      }
+      &::after {
+        width: 15px;
+        border-left: solid 2.5px $white;
+        border-right: solid 2.5px $white;
+        transform: translateX(4px) translateY(-6px) rotate(-45deg);
+      }
+    }
+    .header__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__mobile {
+    .header__top {
+      padding: 18px 25px;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__bottom {
+      background-color: $white;
+      display: none;
+      padding: 45px 20px;
+    }
+    .header__list {
+      text-align: center;
+    }
+    .header__item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .header__link {
+      display: block;
+      padding: 10px;
+      font-size: em(15);
+      color: $lightGray;
+      text-transform: uppercase;
+      transition: color .2s ease-in-out;
+      &--active, &:hover {
+        color: $purple;
+      }
+      &--active {
+        font-weight: 600;
+      }
+    }
+  }
+  &__input {
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: $evenLighterGray;
+    border-radius: 50px;
+    font-size: em(12);
+    padding-left: 35px;
+    color: rgba(0, 0, 0, 0.6);
+    &::placeholder {
+      font-size: em(12);
+      text-align: center;
+    }
+  }
+  &__inputContainer {
+    position: relative;
+  }
+  &__inputContainer::before {
+    content: url('../img/search.svg');
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+  }
+  &__hamburger {
+    display: block;
+    border-top: 2px solid $lightGray;
+    &::before, &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 20px;
+      margin-top: 4px;
+      background-color: $lightGray;
+      transition: transform .2s ease-in-out;
+    }
+  }
+}
