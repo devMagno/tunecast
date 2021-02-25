@@ -6,11 +6,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TuneCast</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+  <header class="header">
+    <div class="header__desktop hide-for-mobile">
+      <div class="header__top">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="TuneCast Logo">
+        </div>
+        <p class="header__title">Tune<span class="fw-light">Cast</span></p>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#" class="header__link header__link--active">Home</a></li>
+          <li class="header__item"><a href="#" class="header__link">Articles</a></li>
+          <li class="header__item"><a href="#" class="header__link">Audio</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__mobile hide-for-desktop">
+      <div class="header__top">
+        <a href="#" class="header__hamburger"></a>
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="TuneCast.">
+        </div>
+        <div class="header__notification">
+          <img src="img/notification.svg" alt="Notifications.">
+        </div>
+      </div>
+      <div class="header__bottom">
+        <form action="#" class="header__form form">
+          <label for="searchInput" class="header__label sr-only">Search</label>
+          <input type="search" name="searchInput" id="searchInput" placeholder="Search" class="header__input">
+        </form>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#" class="header__link header__link--active">Home</a></li>
+            <li class="header__item"><a href="#" class="header__link">Articles</a></li>
+            <li class="header__item"><a href="#" class="header__link">Audio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="main__head">Join us today</h1>
+    <h2 class="main__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+    <section class="main__section">
+      <article class="main__article">
+        <div class="main__icon">
+          <img src="img/watch.svg" alt="Outline yellow watch illustration.">
+        </div>
+        <h3 class="main__title">Spend time smart</h3>
+        <p class="main__text">Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="main__article">
+        <div class="main__icon">
+          <img src="img/mic.svg" alt="Outline yellow microphone illustration.">
+        </div>
+        <h3 class="main__title">Audio podcast</h3>
+        <p class="main__text">Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="main__article">
+        <div class="main__icon">
+          <img src="img/waves.svg" alt="Outline yellow waves illustration.">
+        </div>
+        <h3 class="main__title">Boost your time</h3>
+        <p class="main__text">Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="main__article">
+        <div class="main__icon">
+          <img src="img/diamond.svg" alt="Outline yellow gem illustration.">
+        </div>
+        <h3 class="main__title">Quality</h3>
+        <p class="main__text">Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+  </main>
+
+  <section class="section">
+    <div class="buttons">
+      <a href="#" class="buttons__button buttons__button--purple">Sign up</a>
+      <a href="#" class="buttons__button">Login</a>
+    </div>
+    <div class="genders">
+      <a href="#" class="genders__item"><img src="img/m-purple.svg" alt="Male"></a>
+      <a href="#" class="genders__item gender__item--purple"><img src="img/w-white.svg" alt="Female"></a>
+    </div>
+    <form action="#" class="section__form">
+      <div class="section__group">
+        <label for="usernameInput" class="sr-only">Username</label>
+        <input type="text" name="usernameInput" id="usernameInput" placeholder="Username" class="section__input">
+      </div>
+      <div class="section__group">
+        <label for="emailInput" class="sr-only">Mail</label>
+        <input type="email" name="emailInput" id="emailInput" placeholder="Mail" class="section__input">
+      </div>
+      <div class="section__group">
+        <label for="interestInput" class="sr-only">What are your interests?</label>
+        <input type="text" name="interestInput" id="interestInput" placeholder="What are your interests?" class="section__input">
+      </div>
+      <a href="#" class="section__plus">+</a>
+    </form>
+  </section>
+    
+  <footer class="footer hide-for-desktop">
+    <p class="footer__text">Copyright 2021 &copy;. All rights reserved.</p>
+  </footer>
   
 
   <script src="js/script.js"></script>
