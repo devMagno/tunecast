@@ -1,0 +1,26 @@
+.sr-only {
+  position: absolute;
+  left: -99999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.hide-for-desktop {
+  display: block;
+  @include device(medium) {
+    display: none;
+  }
+}
+.hide-for-mobile {
+  display: none;
+  @include device(medium) {
+    display: block;
+  }
+}
+body {
+  min-height: 100vh;
+  background-image: url('../img/bg-image.png');
+  background-size: cover;
+  background-position: center center;
+  color: $white;
+}
