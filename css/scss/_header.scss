@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   &.open {
     .header__hamburger {
       border-color: $white;
@@ -33,6 +34,9 @@
       background-color: $white;
       display: none;
       padding: 45px 20px;
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
     }
     .header__list {
       text-align: center;
