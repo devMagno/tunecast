@@ -13,7 +13,7 @@
       padding: 15px 60px 23px;
     }
   }
-  &__plus {
+  &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,10 +32,16 @@
       transform: scale(1.10);
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
     }
+    &--arrow {
+      font-size: em(20);
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
+    &:not(.active) {
+      display: none;
+    }
   }
   &__group {
     position: relative;
@@ -49,7 +55,10 @@
       right: 25px;
     }
     &--arrow::after {
-      content: url('../img/arrow-down.svg')
+      content: url('../img/arrow-down.svg');
+    }
+    &--lock::after {
+      content: url('../img/lock.svg');
     }
   }
   &__input {
