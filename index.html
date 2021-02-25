@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TuneCast</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +31,7 @@
 
     <div class="header__mobile hide-for-desktop">
       <div class="header__top">
-        <a href="#" class="header__hamburger"></a>
+        <a href="#" class="header__hamburger" id="hamburgerButton"></a>
         <div class="header__logo">
           <img src="img/logo.svg" alt="TuneCast.">
         </div>
@@ -41,8 +41,10 @@
       </div>
       <div class="header__bottom">
         <form action="#" class="header__form form">
-          <label for="searchInput" class="header__label sr-only">Search</label>
-          <input type="search" name="searchInput" id="searchInput" placeholder="Search" class="header__input">
+          <div class="header__inputContainer">
+            <label for="searchInput" class="header__label sr-only">Search</label>
+            <input type="search" name="searchInput" id="searchInput" placeholder="Search" class="header__input">
+          </div>
         </form>
         <nav class="header__nav">
           <ul class="header__list">
@@ -56,7 +58,7 @@
   </header>
 
   <main class="main">
-    <h1 class="main__head">Join us today</h1>
+    <h1 class="main__heading">Join us today</h1>
     <h2 class="main__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
     <section class="main__section">
       <article class="main__article">
