@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TuneCast</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -93,29 +93,31 @@
   </main>
 
   <section class="section">
-    <div class="buttons">
-      <a href="#" class="buttons__button buttons__button--purple">Sign up</a>
-      <a href="#" class="buttons__button">Login</a>
+    <div class="section__card">
+      <div class="buttons">
+        <a href="#" class="buttons__button buttons__button--purple">Sign up</a>
+        <a href="#" class="buttons__button">Login</a>
+      </div>
+      <div class="genders">
+        <a href="#" class="genders__item"><img src="img/male.svg" alt="Male"></a>
+        <a href="#" class="genders__item genders__item--purple"><img src="img/female.svg" alt="Female"></a>
+      </div>
+      <form action="#" class="section__form">
+        <div class="section__group">
+          <label for="usernameInput" class="sr-only">Username</label>
+          <input type="text" name="usernameInput" id="usernameInput" placeholder="Username" class="section__input">
+        </div>
+        <div class="section__group">
+          <label for="emailInput" class="sr-only">Mail</label>
+          <input type="email" name="emailInput" id="emailInput" placeholder="Mail" class="section__input">
+        </div>
+        <div class="section__group section__group--arrow">
+          <label for="interestInput" class="sr-only">What are your interests?</label>
+          <input type="text" name="interestInput" id="interestInput" placeholder="What are your interests?" class="section__input">
+        </div>
+        <a href="#" class="section__plus">+</a>
+      </form>
     </div>
-    <div class="genders">
-      <a href="#" class="genders__item"><img src="img/m-purple.svg" alt="Male"></a>
-      <a href="#" class="genders__item gender__item--purple"><img src="img/w-white.svg" alt="Female"></a>
-    </div>
-    <form action="#" class="section__form">
-      <div class="section__group">
-        <label for="usernameInput" class="sr-only">Username</label>
-        <input type="text" name="usernameInput" id="usernameInput" placeholder="Username" class="section__input">
-      </div>
-      <div class="section__group">
-        <label for="emailInput" class="sr-only">Mail</label>
-        <input type="email" name="emailInput" id="emailInput" placeholder="Mail" class="section__input">
-      </div>
-      <div class="section__group">
-        <label for="interestInput" class="sr-only">What are your interests?</label>
-        <input type="text" name="interestInput" id="interestInput" placeholder="What are your interests?" class="section__input">
-      </div>
-      <a href="#" class="section__plus">+</a>
-    </form>
   </section>
     
   <footer class="footer hide-for-desktop">
