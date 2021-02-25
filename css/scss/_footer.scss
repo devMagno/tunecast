@@ -1,0 +1,6 @@
+.footer {
+  @include type(7, 300);
+  background-color: $purple;
+  text-align: center;
+  padding: 5px 0;
+}
